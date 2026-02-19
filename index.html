@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project Manager Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>📊 Project Manager Dashboard</h1>
+
+  <!-- Add Task -->
+  <div class="task-input">
+    <input type="text" id="taskInput" placeholder="Enter new task...">
+    <button onclick="addTask()">Add Task</button>
+  </div>
+
+  <!-- Task List -->
+  <div id="taskList" class="task-list"></div>
+
+  <!-- Analytics -->
+  <div class="analytics">
+    <h2>📈 Analytics</h2>
+    <p>Total Tasks: <span id="totalTasks">0</span></p>
+    <p>Completed: <span id="completedTasks">0</span></p>
+    <p>Progress: <span id="progressPercent">0%</span></p>
+
+    <div class="progress-bar">
+      <div id="progressBar"></div>
+    </div>
+  </div>
+
+  <!-- Chart -->
+  <div class="chart-container">
+    <canvas id="taskChart"></canvas>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

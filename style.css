@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(120deg, #667eea, #764ba2);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.task-input input {
+  padding: 10px;
+  width: 60%;
+  border-radius: 8px;
+  border: none;
+}
+
+.task-input button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #ff9800;
+  color: white;
+}
+
+.task-list {
+  margin-top: 20px;
+}
+
+.task {
+  background: white;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task.completed {
+  text-decoration: line-through;
+  background: #c8e6c9;
+}
+
+.analytics {
+  margin-top: 30px;
+}
+
+.progress-bar {
+  background: #ccc;
+  height: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#progressBar {
+  height: 20px;
+  width: 0%;
+  background: #4caf50;
+  border-radius: 10px;
+}
+
+.chart-container {
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+}
